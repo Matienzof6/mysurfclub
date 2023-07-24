@@ -10,22 +10,28 @@
   {% bootstrap_javascript %}
 </head>
 <body>
-    <div class="topnav">
-        <ul class="nav bg-info">
-            <li class="nav-item">
-              <a class="nav-link link-light" href="/">INICIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-light" href="/members">MEMBERS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-light" href="/escuela">ESCUELA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-light" href="/hostel">HOSTEL</a>
-            </li>
-          </ul>
+  <nav class="navbar navbar-expand-sm bg-info">      
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'inicioMaster/img/logo.png' %}" style="width: 80px; margin: 10px;" alt="Mallorca Surf Club">
+      </a>
+      <ul class="nav">
+        </a>            
+        <li class="nav-item">
+          <a class="nav-link link-light" href="/">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="/members">MEMBERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="/escuela">ESCUELA</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link link-light" href="/hostel">HOSTEL</a>
+        </li>
+      </ul>    
     </div>
+  </nav>
 {% block content %}
 {% endblock %}
 
