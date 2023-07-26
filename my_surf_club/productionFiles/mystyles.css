@@ -14,15 +14,23 @@
     height: 100vh;
 }
 
-
+.fondoContacto{
+    background-image: url(https://www.escueladesurflaislasantamarina.es/wp/wp-content/uploads/2016/08/Escuela-de-Surf-en-Cantabria-para-Grupos-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 .formulario {
     color: white !important;
   }
   
+tbody {
+    padding: 10px 25px;
+}
 .contenedorFormulario {
   
-    background-color: gray;
-    width: 50%;
+    
     margin: 10px auto;
     border-radius: 5px;
     padding: 1px 0px;
