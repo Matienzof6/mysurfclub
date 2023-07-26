@@ -8,3 +8,8 @@ class Member(models.Model):
     lastname = models.CharField(max_length=250)
     phone = models.IntegerField(null=True)
     joined_date = models.DateField(null=True)
+    imagen = models.ImageField(upload_to='img', null=True, blank=True)
+
+    class Meta:
+        verbose_name='Member'
+        verbose_name_plural='Members'

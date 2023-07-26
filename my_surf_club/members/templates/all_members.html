@@ -5,12 +5,22 @@
 {% endblock %}
 
 {% block content %}
-  <div class="container-sm">
-    <h1>Members</h1>
-    <ul class="list-group">
+<div class="container">
+  <h1 class="text-center p-5 m-2">Nuestros Profesionales</h1>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
       {% for x in mymembers %}
-        <li class="list-group-item" onclick="window.location = 'details/{{ x.id }}'">{{ x.firstname }} {{ x.lastname }}</li>
-      {% endfor %}
-    </ul>
+      <div class="card p-5 m-2" style="width: 100%;">
+        <img src="{{x.imagen.url}}">
+        <div class="card-body" style="text-align: center;">
+          <h7 class="card-title">{{ x.firstname }} {{ x.lastname }}</h7>
+        </div>
+        <div class="card-footer text-center btn btn-success"onclick="window.location = 'details/{{ x.id }}'">Detalles</div>
+      
+      
+      </div>  
+      {% endfor %}  
+    </div>
   </div>
+</div>
 {% endblock %}

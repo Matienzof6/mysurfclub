@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
     'escuela',
     'inicioMaster',
     'hostel',
+    'Contacto',
 ]
 
 MIDDLEWARE = [
@@ -110,6 +112,13 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_USE_TLS=True
+EMAIL_PORT=587
+EMAIL_HOST_USER='matienzof6@gmail.com'
+EMAIL_HOST_PASSWORD='iijiuxhpicrkzdwv'
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
@@ -135,8 +144,9 @@ STATICFILES_DIRS = [
 
 #Media
 
-MEDIA_URL='/media/'
-MEDIA_ROOT= BASE_DIR / 'media'
+MEDIA_URL ='/media/'
+
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

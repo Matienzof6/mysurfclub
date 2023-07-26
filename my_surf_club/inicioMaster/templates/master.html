@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html>
   <link rel="stylesheet" href="{% static 'mystyles.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap" rel="stylesheet">
 <head>  
   <title>{% block title %}{% endblock %}</title>
   {% load bootstrap5 %}
@@ -13,7 +16,7 @@
   <nav class="navbar navbar-expand-sm bg-info">      
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="{% static 'inicioMaster/img/logo.png' %}" style="width: 80px; margin: 10px;" alt="Mallorca Surf Club">
+        <img src="{% static 'inicioMaster/img/logoBlanco.png' %}" style="width: 80px; margin: 10px;" alt="Mallorca Surf Club">
       </a>
       <ul class="nav">
         </a>            
@@ -28,6 +31,9 @@
         </li>
         <li class="nav-item">
         <a class="nav-link link-light" href="/hostel">HOSTEL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="/contacto">CONTACTO</a>
         </li>
       </ul>    
     </div>
