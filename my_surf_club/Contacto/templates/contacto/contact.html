@@ -1,9 +1,12 @@
 {% extends 'master.html' %}
-
+{% load static %}
 {% block titleh1 %}Contacto{% endblock %}
 
 {% block content %}
   <div class="contenedorFormulario fondoContacto">
+    <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+    <img src="{% static 'inicioMaster/img/logoBlanco.png' %}" style="width: 80px; margin: 10px;" alt="Mallorca Surf Club">
+    </div>
     <h1 class="text-center text-white tituloContenedorFormulario">Apuntate hoy mismo!</h1>
     {% if "valido" in request.GET %}
       <p class="alert alert-success text-center">Información enviada correctamente</p>

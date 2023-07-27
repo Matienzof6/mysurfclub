@@ -6,8 +6,76 @@
     height: 100vh;
 }
 
+.titulo-principal {
+    font-size: 6rem;
+    font-family: 'Mali', cursive;
+    -webkit-text-stroke: 1px black;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitulo-principal {
+    font-size: 2rem;
+    -webkit-text-stroke: 1.5px black;
+    margin-bottom: 3rem;
+  }
+  
+  /* Estilos para la sección de Información */
+  .informacion {
+    background-color: #f8f9fa;
+  }
+  
+  .informacion h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .informacion p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  /* Estilo para el contenedor del logo/emoji/svg */
+.logo-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .logo-icon img {
+    width: 40px; /* Ajusta el tamaño según tus necesidades */
+    height: 40px;
+    /* Puedes agregar otros estilos aquí, como márgenes o bordes */
+  }
+
+
+  /* Estilos para la sección de Testimonios */
+  .testimonios {
+    background-color: #f0f8ff;
+  }
+  
+  .testimonio-item {
+    text-align: center;
+  }
+  
+  .testimonio-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonio-item p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .testimonio-item .font-weight-bold {
+    font-size: 1.1rem;
+  }
+
 .fondo-escuela {
-    background-image: url(https://media.traveler.es/photos/61377b8c86b46eac7cf5b2ed/master/w_1600%2Cc_limit/95965.jpg);
+    background-image: url(https://takesurfelpalmar.com/wp-content/uploads/2021/12/destacados-home-hostel_4-02.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,6 +89,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
   }
   
   /* Estilo del formulario */
@@ -74,4 +144,35 @@
   
   .btn-primary:hover {
     background-color: #0056b3;
+  }
+
+/* Estilo de las imágenes del portafolio */
+.card {
+    border: none;
+  }
+  
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+/* Estilo de la sección de anuncios */
+.card-text {
+    font-size: 18px;
+}
+
+
+
+/* Hostel */
+
+
+.imagen-carrusel {
+    max-height: 500px; 
+    object-fit: cover; 
+  }
+
+.video-carrusel {
+    max-width: 100%;
+    height: auto;
   }

@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap" rel="stylesheet">
+  <script src="{% static 'scripts.js' %}"></script>
 <head>  
   <title>{% block title %}{% endblock %}</title>
   {% load bootstrap5 %}
@@ -38,8 +39,17 @@
       </ul>    
     </div>
   </nav>
-{% block content %}
-{% endblock %}
+
+  {% block content %}
+  {% endblock %}
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; {% now "Y" %} Mallorca Surf Club. Todos los derechos reservados.</p>
+      <p>Diseñado por Maty</p>
+    </div>
+  </footer>
 
 </body>
 </html>

@@ -1,21 +1,74 @@
 {% extends "master.html" %}
 {% load static %}
+
 {% block title %}
   Escuela
 {% endblock %}
 
 {% block content %}
 <div class="fondo-escuela d-flex justify-content-center align-items-center">
-  <div style=" color: white; ">
-      <h1 style="font-size:10vh; font-family: 'Mali', cursive; -webkit-text-stroke: 1px black;">Escuela</h1>
+  <div style="color: white;">
+    <h1 style="font-size: 10vh; font-family: 'Mali', cursive; -webkit-text-stroke: 1px black;">Nuestra Escuela</h1>
+    <p style="font-size: 4vh; -webkit-text-stroke: 0.8px black;">Apuntate hoy mismo! <a href="{% url 'contact' %}" class="btn btn-primary">Inscribirse</a></p>
+  </div>
+</div>
 
-      <p style="font-size: 4vh; -webkit-text-stroke: 0.8px black;">Apuntate hoy mismo!</p>
-      
+<div class="container my-5">
+  <h2 class="text-center mb-4">Somos mas que una escuela de surf</h2>
+  <div class="row">
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card">
+        <img src="{% static 'escuela/img/surf1.jpg' %}" class="card-img-top" alt="Imagen 1">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit enim alias eligendi molestiae repellat voluptas ad rerum!.</p>
+        </div>
+      </div>
     </div>
-</div>
 
 
-<div>
-  
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card">
+        <img src="{% static 'escuela/img/surf2.webp' %}" class="card-img-top" alt="Imagen 2">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nobis dolores. Soluta quae ducimus minima ratione impedit?.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card">
+        <img src="{% static 'escuela/img/surf3.jpg' %}" class="card-img-top" alt="Imagen 3">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur dicta obcaecati perferendis nobis neque exercitationem repellendus?.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card">
+        <img src="{% static 'escuela/img/surf4.jpg' %}" class="card-img-top" alt="Imagen 3">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo culpa sapiente, tenetur animi necessitatibus.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
 </div>
-{% endblock %}  
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Únete a nuestra escuela de surf</h2>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card text-center">
+        <div class="card-body">
+          <h3 class="card-title">¡Inscríbete ahora!</h3>
+          <p class="card-text">¡No te pierdas la oportunidad de aprender surf con nosotros!</p>
+          <a href="{% url 'contact' %}" class="btn btn-primary">Inscribirse</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

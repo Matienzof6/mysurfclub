@@ -1,18 +1,91 @@
 {% extends "master.html" %}
+{% load static %}
 
 {% block title %}
   My Surf Club
 {% endblock %}
 
-
 {% block content %}
 
 <div class="fondo d-flex justify-content-center align-items-center">
-  <div style=" color: white; ">
-      <h1 style="font-size:10vh; font-family: 'Mali', cursive; -webkit-text-stroke: 1px black;">Mallorca Surf Club</h1>
-
-      <p style="font-size: 4vh; -webkit-text-stroke: 1.5px black;">Nuestros Profesionales <a href="members/" class="link-light">MEMBERS</a></p>
-      
-    </div>
+  <div class="text-center">
+    <h1 class="titulo-principal">Mallorca Surf Club</h1>
+    <p class="subtitulo-principal">Descubre el emocionante mundo del surf con nosotros</p>
+    <a href="{% url 'members' %}" class="btn btn-primary btn-lg">Conoce a nuestros profesionales</a>
+  </div>
 </div>
+
+<!-- Sección de Información -->
+<section class="informacion bg-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        
+        <div class="logo-icon">
+          <img src="{% static 'inicioMaster/img/elemento3.png' %}">
+        </div>
+        <h3>Clases de Surf</h3>
+        <p>
+          Nuestra escuela de surf ofrece clases para todos los niveles, desde principiantes hasta surfistas avanzados.
+        </p>
+      </div>
+      <div class="col-md-4">
+       
+        <div class="logo-icon">
+          <img src="{% static 'inicioMaster/img/elemento2.png' %}">
+        </div>
+        <h3>Equipamiento de Calidad</h3>
+        <p>
+          Contamos con el mejor equipamiento de surf para que puedas disfrutar al máximo de tu experiencia en el agua.
+        </p>
+      </div>
+      <div class="col-md-4">
+       
+        <div class="logo-icon">
+          <img src="{% static 'inicioMaster/img/elemento1.png' %}">
+        </div>
+        <h3>Playas Exclusivas</h3>
+        <p>
+          Disfruta de nuestras clases en las mejores playas de Mallorca, con olas perfectas para surfear.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container d-flex justify-content-center" style="margin: 20px auto;"><a href="{% url 'escuela' %}" class="btn btn-primary btn-lg">>¡Unete a nuestra escuela!<</a></div>
+<!-- Sección de Testimonios -->
+<section class="testimonios py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Testimonios de Nuestros Alumnos</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="testimonio-item">
+          <img src="{% static 'inicioMaster/img/laura.jpg' %}" class="img-fluid rounded-circle" alt="Testimonio 1">
+          <p class="mt-3">"Excelente experiencia, los instructores son muy profesionales y amigables. ¡Lo recomiendo totalmente!"</p>
+          <p class="font-weight-bold">Laura G.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="testimonio-item">
+          <img src="{% static 'inicioMaster/img/marcos.jpg' %}" class="img-fluid rounded-circle" alt="Testimonio 2">
+          <p class="mt-3">"Excelente experiencia, los instructores son muy profesionales y amigables. ¡Lo recomiendo totalmente!"</p>
+          <p class="font-weight-bold">Marcos L.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="testimonio-item">
+          <img src="{% static 'inicioMaster/img/laura.jpg' %}" class="img-fluid rounded-circle" alt="Testimonio 3">
+          <p class="mt-3">"Excelente experiencia, los instructores son muy profesionales y amigables. ¡Lo recomiendo totalmente!"</p>
+          <p class="font-weight-bold">Juan M.</p>
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+
 {% endblock %}
