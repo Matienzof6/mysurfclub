@@ -14,33 +14,64 @@
     height: 100vh;
 }
 
-.fondoContacto{
-    background-image: url(https://www.escueladesurflaislasantamarina.es/wp/wp-content/uploads/2016/08/Escuela-de-Surf-en-Cantabria-para-Grupos-1.jpg);
+/* Estilo del fondo */
+.fondoContacto {
+    background: linear-gradient(135deg, #b2e0ff, #a1d7ff, #91cffc, #80c5fc, #6fbdfc);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-}
-.formulario {
-    color: white !important;
   }
   
-tbody {
-    padding: 10px 25px;
-}
-.contenedorFormulario {
-  
-    
+  /* Estilo del formulario */
+  .contenedorFormulario {
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 500px;
     margin: 10px auto;
-    border-radius: 5px;
-    padding: 1px 0px;
-    
   }
   
-  
-.tituloContenedorFormulario {
-    text-transform: uppercase !important;
+  /* Estilo del título del formulario */
+  .tituloContenedorFormulario {
+    text-transform: uppercase;
     line-height: 1;
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #007bff;
   }
   
+  /* Estilo de los campos de entrada */
+  .form-group label {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    color: #007bff;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilo del botón */
+  .btn-primary {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }

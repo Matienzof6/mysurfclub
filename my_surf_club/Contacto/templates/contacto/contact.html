@@ -1,22 +1,29 @@
 {% extends 'master.html' %}
 
-{% block titleh1 %} Contacto {% endblock %} 
+{% block titleh1 %}Contacto{% endblock %}
 
 {% block content %}
-
-    <div class="contenedorFormulario fondoContacto" style="padding: 5vh">
-        <h1 class="text-center text-white" style="font-size:10vh; font-family: 'Mali', cursive; -webkit-text-stroke: 2px black; margin: 15px;">Apuntate hoy mismo!</h1>
-        {% if "valido" in request.GET %}
-
-            <p class="alert alert-success text-center">Informacion enviada correctamente</p>
-
-
-        {% endif %}
-        <form action="" method="POST" style="text-align: center;">
-            {% csrf_token %}
-            <table style=" color: black; margin: 20px auto ; background-color: gray; opacity: 90%;">{{miFormulario.as_table}}</table>
-            <input type="submit" value="Enviar" style="width: 150px">
-        </form>
-    </div>
+  <div class="contenedorFormulario fondoContacto">
+    <h1 class="text-center text-white tituloContenedorFormulario">Apuntate hoy mismo!</h1>
+    {% if "valido" in request.GET %}
+      <p class="alert alert-success text-center">Información enviada correctamente</p>
+    {% endif %}
+    <form action="" method="POST" class="formulario">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="nombre" class="text-white">Nombre:</label>
+        {{ miFormulario.nombre }}
+      </div>
+      <div class="form-group">
+        <label for="correo" class="text-white">Correo electrónico:</label>
+        {{ miFormulario.email }}
+      </div>
+      <div class="form-group">
+        <label for="mensaje" class="text-white">Mensaje:</label>
+        {{ miFormulario.contenido }}
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
 
 {% endblock %}
